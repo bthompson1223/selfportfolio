@@ -18,6 +18,45 @@
       </nav>
     </header>
 
-    <section class="form"></section>
+    <section class="form">
+      <form
+        action="mailto:bthompson1223@gmail.com"
+        method="post"
+        name="hire-me-form"
+      >
+        <fieldset>
+          <legend>Job Details</legend>
+          <div class="form-input firstname">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div class="form-input lastname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
+          <div class="form-input job-type">
+            <input type="radio" name="job-type" value="fulltime" />
+            <label for="job-type">Full-Time</label>
+            <input type="radio" name="job-type" value="parttime" />
+            <label for="job-type">Part-Time</label>
+            <input type="checkbox" name="contract" id="contract" />
+            <label for="contract">Contract</label>
+          </div>
+          <div class="form-input details">
+            <label for="job-details">Job Description</label>
+            <textarea
+              name="job-details"
+              id="job-details"
+              cols="30"
+              rows="10"
+              placeholder="Job description"
+            ></textarea>
+          </div>
+          <div class="form-input submit">
+            <button>Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
   </body>
 </html>
